@@ -1,4 +1,4 @@
-import { admin } from "firebase-admin";
+import admin from "firebase-admin";
 import { serviceAccount } from "../fir-chat-d3c37-firebase-adminsdk-a02bn-43620c440d.json";
 
 admin.initializeApp({
