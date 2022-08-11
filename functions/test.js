@@ -16,7 +16,7 @@ admin.initializeApp({
 //     console.log("Error fetching user data:", error);
 //   });
 
-exports.handler = (event, context, callback) => {
+export const handler = (event, context, callback) => {
   callback(null, {
     statusCode: 200,
     body: "Yey!",
