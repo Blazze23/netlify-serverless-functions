@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "firebase-admin": "^11.0.1",
     "netlify-lambda": "^2.0.15"
   },
   "devDependencies": {},
