@@ -1,5 +1,5 @@
-import * as admin from "firebase-admin";
-import { serviceAccount } from "../fir-chat-d3c37-firebase-adminsdk-a02bn-43620c440d.json";
+const admin = require("firebase-admin");
+var serviceAccount = require("../fir-chat-d3c37-firebase-adminsdk-a02bn-43620c440d.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -16,7 +16,7 @@ admin.initializeApp({
 //     console.log("Error fetching user data:", error);
 //   });
 
-export const handler = (event, context, callback) => {
+exports.handler = (event, context, callback) => {
   callback(null, {
     statusCode: 200,
     body: "Yey!",
